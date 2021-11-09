@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/istea/CLionProjects/pageTable/MemoryConstants.h
+climits
+-
+stdint.h
+-
+
+/cygdrive/c/Users/istea/CLionProjects/pageTable/PhysicalMemory.h
+MemoryConstants.h
+/cygdrive/c/Users/istea/CLionProjects/pageTable/MemoryConstants.h
+random
+-
+memory
+-
+sstream
+-
+
+/cygdrive/c/Users/istea/CLionProjects/pageTable/SimpleTest.cpp
+VirtualMemory.h
+/cygdrive/c/Users/istea/CLionProjects/pageTable/VirtualMemory.h
+cstdio
+-
+cassert
+-
+
+/cygdrive/c/Users/istea/CLionProjects/pageTable/VirtualMemory.cpp
+algorithm
+-
+cmath
+-
+PhysicalMemory.h
+/cygdrive/c/Users/istea/CLionProjects/pageTable/PhysicalMemory.h
+
+/cygdrive/c/Users/istea/CLionProjects/pageTable/VirtualMemory.h
+MemoryConstants.h
+/cygdrive/c/Users/istea/CLionProjects/pageTable/MemoryConstants.h
+
