@@ -1,7 +1,23 @@
-dubirot54, israelbenattar
-shalom rotshtane 311365357, israel benattar 311225411
-EX: 4
+An implementation of Hierarchical Page Tables in c++
+should be run an a Linux environment.
 
-FILES:
+VMinitialize() – will be called before any other function is called.
 
-VirtualMemory.cpp -- a VirtualMemory library.
+VMread(uint64_t virtualAddress, word_t* value) – reads the word from the virtual
+address virtualAddress into *value. Returns 1 on success and 0 on failure.
+
+VMwrite(uint64_t virtualAddress, word_t value) – writes the word value into the virtual
+address virtualAddress. Returns 1 on success and 0 on failure.
+
+PMread(uint64_t physicalAddress, word_t* value) – reads the word from the physical
+address phsyicalAddress into *value.
+
+PMwrite(uint64_t physicalAddress, word_t value) – writes the word value into the
+physical address phsyicalAddress.
+
+PMevict(uint64_t frameIndex, uint64_t evictedPageIndex) – evicts the page
+evictedPageIndex from the frame frameIndex in the physical memory and stores it in the
+simulated hard drive.
+
+PMrestore(uint64_t frameIndex, uint64_t restoredPageIndex) – restores the page
+restoredPageIndex from the simulated hard drive i
